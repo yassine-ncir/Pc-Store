@@ -3,4 +3,4 @@
 this is my seccond project with java 😊
 < I a starter with 'oop' so let's try >
 
-THIS PROJECT HAS PC LAPTOP AND DESKTOP 
+I start with my new project 'Pc Store' new kowlege and new lifestyle
