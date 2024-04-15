@@ -16,11 +16,12 @@ public class service {
             System.out.println("2) Remove Pc ");
             System.out.println("3) Find name of ref ");
             System.out.println("4) Display all the list ");
+            System.out.println("5) Selection Sort  ");
             System.out.println("0) Quit ");
 
             System.out.print("put your choose : ");
             choose = input.nextInt();
-        }while( choose <0 || choose > 5);
+        }while( choose <0 || choose > 6);
         return choose;
     }
 
@@ -82,6 +83,22 @@ public class service {
             System.out.print("line "+(i+1)+" : ");
             String display = tabPc.get(i).toString();
             System.out.println(display);
+        }
+    }
+
+    public static void selectionSort(ArrayList<Pc> tabPc)
+    {
+        for (int i=0;i<tabPc.size()-1;i++){
+            int min = i;
+            for (int j=i+1;j<tabPc.size();j++){
+                if (tabPc.get(min).getRef() > tabPc.get(j).getRef()){
+                    min = j;
+                }
+            }
+            // Swap the elements
+            Pc temp = tabPc.get(min);
+            tabPc.set(min, tabPc.get(i));
+            tabPc.set(i, temp);
         }
     }
 

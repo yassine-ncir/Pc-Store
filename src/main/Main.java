@@ -45,6 +45,14 @@ public class Main {
                     System.out.println(" <-> <-> <->  Display All The List  <-> <-> <-> ");
                     service.displayArray(tabPc);
                     break;
+                case 5:
+                    System.out.println(" <-> <-> <->  Selection Sort  <-> <-> <-> ");
+                    System.out.print("The array before sort : ");
+                    service.displayArray(tabPc);
+                    System.out.print("The array after sort : ");
+                    service.selectionSort(tabPc);
+                    service.displayArray(tabPc);
+                    break;
                 default:
                     System.out.println("Sorry,you don't choose anythig ");
             }
